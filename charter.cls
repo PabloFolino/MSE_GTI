@@ -7,7 +7,7 @@
 \typeout{\fileversion}
 \typeout{Creado por Patricio Bos para el Laboratorio de Sistemas Embebidos de FIUBA}
 \typeout{\filedate}
-\typeout{Una clase para armar planificaciones de Trabajos finales en el curso de Gestión de Proyectos.}
+\typeout{Una clase para armar planificaciones de Trabajos finales en el curso de Gestión de la Tecnología y la Innovación.}
 
 \RequirePackage{etoolbox}
 \RequirePackage{xparse}
@@ -129,7 +129,7 @@
 \fancyhf{} % clear all header and footers
 \pagestyle{fancy}
 
-\lhead{\includegraphics[width=4cm]{./Figuras/logoFIUBA.png}}
+\lhead{\includegraphics[width=4cm]{./Figuras/logoFIUBA.pdf}}
 \chead{}
 \rhead{\normalsize \textrm{Plan de proyecto de Trabajo final \\\degreename\\ \authorname}}
 \lfoot{ }
@@ -184,7 +184,7 @@
 \thispagestyle{empty}
 \centering
 	
-	\centering \includegraphics[width=.7\textwidth]{./Figuras/logoFIUBA.png}
+	\centering \includegraphics[width=.7\textwidth]{./Figuras/logoFIUBA.pdf}
 	
 	\vspace{3cm}
 	{\Huge \textbf{\ttitle}} \\
@@ -201,14 +201,14 @@
 	\ifbool{codirector}{% If the codirector class option has been specified
 	\vspace{10px}
 	{\normalsize Codirector:\\}
-	{\Large \cosupname  \hspace{1px} (\pertecosupname) \\}
+	%{\Large \cosupname  \hspace{1px} (\pertecosupname) \\}
 	}{\vspace{2pc}%nothing
 	}
 		
 	
     \vfill
     \centering
-    \textit{Esta planificación fue realizada en el curso de Gestión de proyectos\\ entre el \fechaInicioName \hspace{1px} y el  \fechaFinalPlanName.}
+    \textit{Esta planificación fue realizada en el curso de Gestión de la Tecnología y la Innovación\\ entre el \fechaInicioName \hspace{1px} y el  \fechaFinalPlanName.}
 		
 	\pagebreak
   }
